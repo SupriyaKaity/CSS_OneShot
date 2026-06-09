@@ -1,0 +1,58 @@
+/* ********************************************Universal Selector******************************************** */
+* {
+  font-family: verdana;
+}
+
+/* ********************************************Class Selector******************************************** */
+.title {
+  font-family: cursive;
+  background-color: deeppink;
+}
+
+/* ********************************************Multiple Class******************************************** */
+.highlight {
+  background-color: yellow;
+}
+
+.border {
+  border: 2px solid black;
+}
+
+/* ********************************************Id Selector******************************************** */
+#large-title {
+  background-color: cadetblue;
+  text-align: center;
+  width: 50%;
+  font-family: cursive;
+}
+
+/* ********************************************Attribute Selector******************************************** */
+input[type="email"] {
+  background-color: #d3d3d3;
+}
+
+/* ********************************************Descendant Selector********************************************  */
+div p {
+  color: blue;
+  font-size: 18px;
+}
+
+/* ********************************************Child Selector******************************************** */
+ul > li {
+  list-style-type: circle;
+  color: red;
+}
+
+/* ********************************************Adjacent Sibling Selector******************************************** */
+h2 + p {
+  color: green;
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* ********************************************General Sibling Selector******************************************** */
+h2 ~ p {
+  color: orange;
+  font-size: 14px;
+  font-weight: bold;
+}

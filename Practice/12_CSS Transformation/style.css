@@ -1,0 +1,54 @@
+/* ****************************************1. Move It! 🏃‍♂️ – translate(x, y)**************************************** */
+.move-right {
+  transition: 0.5s;
+}
+
+.move-right:hover {
+  transform: translate(50px, 0);
+}
+
+/* ****************************************2. Grow and Shrink – scale(x, y)**************************************** */
+.zoom {
+  transition: 0.5s;
+}
+
+.zoom:hover {
+  transform: scale(1.5); /* Grows to 1.5 times the original size */
+}
+
+/* ****************************************3. Spin Around 🔄 – rotate(angle)**************************************** */
+.rotate {
+  transition: 0.5s;
+}
+
+.rotate:hover {
+  transform: rotate(45deg); /* Rotates 45 degrees clockwise */
+}
+
+/* ****************************************4. Tilt It – skew(x, y)**************************************** */
+.slant {
+  transition: 0.5s;
+}
+
+.slant:hover {
+  transform: skew(10deg, 15deg); /* Tilts 10° horizontally and 15° vertically */
+}
+
+/* ****************************************5. The Transformation Origin 🎯 – transform-origin**************************************** */
+.rotate-from-corner {
+  transition: 0.5s;
+}
+
+.rotate-from-corner:hover {
+  transform-origin: top left; /* Starts rotation from top-left corner */
+  transform: rotate(45deg);
+}
+
+/* ****************************************Mix It Up! (Combining Transformations)**************************************** */
+.combo {
+  transition: 0.5s;
+}
+
+.combo:hover {
+  transform: translate(20px, 10px) scale(1.2) rotate(30deg);
+}

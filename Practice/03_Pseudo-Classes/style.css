@@ -1,0 +1,155 @@
+/* **********************************************************:hover*********************************** */
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #005e05;
+}
+
+/* **********************************************************:focus*********************************** */
+.input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.input:focus {
+    background-color: #75f075;
+    border-color: #025106;
+    outline: none;
+}
+
+/* ** **********************************************************:active*********************************** */
+a {
+    color: blue;
+}
+
+a:active {
+    color: red;
+}
+
+/* ** **********************************************************:visited*********************************** */
+a {
+    color: blue;
+}
+a:visited {
+    color: purple;
+}
+
+/* **********************************************************:nth-child(n)*********************************** */
+table {
+    width: 80%;
+    height: 400px;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #ebe7e7;
+}
+
+tr:nth-child(even) {
+    background-color: #e6b2b2;
+}
+
+/* **********************************************************:first-child*********************************** */
+.container div {
+    padding: 10px;
+    margin: 5px;
+    background-color: #f0f0f0;
+    border: 1px solid gray;
+}
+
+.container div:first-child {
+    background-color: #ff9999;
+    font-weight: bold;
+}
+
+/* **********************************************************:last-child*********************************** */
+.content p {
+    padding: 10px;
+    margin: 5px;
+    background-color: #f0f0f0;
+    border: 1px solid gray;
+}
+
+.content p:last-child {
+    background-color: #ff9999;
+    font-weight: bold;
+}
+
+/* **********************************************************:only-child*********************************** */
+.cont p {
+    padding: 10px;
+    margin: 5px;
+    background-color: #f0f0f0;
+    border: 1px solid gray;
+}
+
+.cont p:only-child {
+    background-color: #ff9999;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* **********************************************************:not(.highlight)*********************************** */
+.highlight {
+    background-color: yellow;
+    color: black;    
+}
+
+span:not(.highlight) {
+    background-color: lightpink;
+    color: white;
+    padding: 10px;
+    /* margin-top: 50px; */
+    border: 1px solid gray;
+    display: block;
+}
+
+/* **********************************************************:checked*********************************** */
+label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: lightgray;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label {
+    background-color: lightgreen;
+    color: white;
+}
+
+/* **********************************************************:enabled*********************************** */
+input:enabled {
+    background-color: lightblue;
+    border: 2px solid blue;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+input:disabled {
+    background-color: lightgray;
+    border: 2px solid gray;
+    padding: 10px;
+    border-radius: 4px;
+    color: #888;
+}

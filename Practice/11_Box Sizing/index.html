@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Box Sizing</title>
+</head>
+<body>
+    <!-- ******************************************************
+    content-box (Default)****************************************************** -->
+    Total width = width + padding + border
+    Total height = height + padding + border
+
+    .box {
+        width: 200px;
+        padding: 20px;
+        border: 5px solid black;
+        box-sizing: content-box;
+    }
+
+    Total width = 200 + 20 + 20 + 5 + 5 = 250px
+
+    <!-- ******************************************************
+    border-box****************************************************** -->
+    Content size = width − padding − border
+    Total width = specified width
+
+    .box {
+        width: 200px;
+        padding: 20px;
+        border: 5px solid black;
+        box-sizing: border-box;
+    }
+
+    Total width = 200px
+</body>
+</html>

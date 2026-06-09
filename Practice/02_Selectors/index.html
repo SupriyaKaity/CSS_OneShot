@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ********************************************Universal Selector******************************************** -->
+    <h3>Mastering CSS Selectors: Your Path to Styling Success</h3>
+    <p>
+        CSS selectors are the foundation of styling in web development. They allow you to target specific HTML elements and apply styles to them. By mastering CSS selectors, you can create visually appealing and well-structured websites. In this article, we will explore the different types of CSS selectors and how to use them effectively.
+    </p>
+
+    <!-- ********************************************Class Selector******************************************** -->
+    <h1 class="title">This is a Heading with a Custom Style</h1>
+
+    <!-- ********************************************Multiple Class******************************************** -->
+    <p class="highlight border">This is a paragraph with a highlight style.</p>
+
+    <!-- ********************************************Id Selector******************************************** -->
+    <h1 class="titlestyle" id="large-title">The world is full of fascinating places.</h1>
+
+    <!-- ********************************************Attribute Selector******************************************** -->
+     <h1>Registration Form</h1>
+     <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+
+        <input type="submit" value="Submit">
+     </form>
+
+     <!-- ********************************************Descendant Selector******************************************** -->
+      <div>
+        <h3>This is a heading inside a div.</h3>
+        <p>This is a paragraph inside a div.</p>
+      </div>
+      <p>This is a paragraph outside any div.</p>
+      <p>This is another paragraph outside any div.</p>
+
+      <!-- ********************************************Child Selector******************************************** -->
+       <ul>
+        <li>First direct child item</li>
+        <li>Second direct child item</li>
+        <ol>
+            <li>This is a nested list item(won't be styled)</li>
+        </ol>
+    </ul>
+
+     <!-- ********************************************Adjacent Sibling Selector******************************************** -->
+      <h2>Heading 2</h2>
+      <p>This paragraph is an adjacent sibling to Heading 1 and will be styled.</p>
+      <p>This paragraph is not an adjacent sibling to Heading 1 and will not be styled.</p>
+
+      <h2>Another Heading 2</h2>
+      <p>This paragraph is an adjacent sibling to Another Heading 2 and will be styled.</p>
+      <div><p>This is a paragraph inside a div.</p></div>
+
+      <!-- ********************************************General Sibling Selector******************************************** -->
+       <h2>Heading 3</h2>
+       <p>This paragraph is a general sibling to Heading 2 and will be styled.</p>
+       <p>This paragraph is also a general sibling to Heading 2 and will be styled.</p> 
+
+       <div>
+        <p>This is a paragraph inside a div.</p>
+       </div>
+
+       <h2>
+        Another Heading 3
+       </h2>
+       <p>This paragraph comes after Another Heading 3 and will be styled.</p>
+       <span>This is a span element that is a sibling to Another Heading 3.</span>
+</body>
+</html>

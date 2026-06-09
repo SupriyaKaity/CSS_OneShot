@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pseudo-Classes</title>
+</head>
+<body>
+    <!-- **********************************************************:hover*********************************** -->
+     <button class="button">Hover me</button>
+
+        <!-- **********************************************************:focus*********************************** -->
+    <input type="text" class="input" placeholder="Focus on me!">
+
+    <!-- ** **********************************************************:active*********************************** -->
+      <a href="#">Click me!</a>
+
+    <!-- ** **********************************************************:visited*********************************** -->
+    <a href="https://example.com" target="_blank" rel="noopener noreferrer">Visit Example</a>
+
+    <!-- **********************************************************:nth-child(n)*********************************** -->
+     <table>
+        <th>
+                Table Header
+        </th>
+        <tr>
+            <td>Row 1, Cell 1</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+        </tr>
+        <tr>
+            <td>Row 3, Cell 1</td>
+        </tr>
+        <tr>
+            <td>Row 4, Cell 1</td>
+        </tr>
+     </table>
+
+     <!-- **********************************************************:first-child*********************************** -->
+      <div class="container">
+        <div>First child</div>
+        <div>Second child</div>
+        <div>Third child</div>
+      </div>
+      <br>
+
+      <!-- **********************************************************:last-child*********************************** -->
+        <div class="content">
+            <p>First child</p>
+            <p>Second child</p>
+            <p>Last child</p>
+        </div>
+        <br>
+
+        <!-- **********************************************************:only-child*********************************** -->
+         <div class="cont">
+            <p>This is the only child</p>
+         </div>
+         <div class="cont">
+            <p>First child</p>
+            <p>Second child</p>
+         </div>
+         <br>
+
+            <!-- **********************************************************:not(.highlight)*********************************** -->
+         <span>This will be styled by :not()</span>
+         <span class="highlight">This is a highlighted paragraph</span>
+         <span>This will also be styled by :not()</span><br>
+
+         <!-- **********************************************************:checked*********************************** -->           
+         <input type="checkbox" id="checkbox">
+         <label for="checkbox">Check me</label><br><br>
+
+         <!-- **********************************************************:enabled*********************************** -->
+        <input type="text" value="Enabled input">
+        <input type="text" disabled value="Disabled input">
+</body>
+</html>

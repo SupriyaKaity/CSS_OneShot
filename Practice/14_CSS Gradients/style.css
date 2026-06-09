@@ -1,0 +1,35 @@
+/* *****************************Linear Gradient***************************** */
+.linear-box {
+    width: 300px;
+    height: 150px;
+    background: linear-gradient(to bottom, red, yellow);
+    text-align: center;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+}
+
+/* *****************************Radial Gradient***************************** */
+.radial-box {
+    width: 300px;
+    height: 150px;
+    background: radial-gradient(circle, blue, lightblue, white);
+    text-align: center;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+}
+/* ellipse: oval shape (default)
+background: radial-gradient(circle at top left, red, orange, yellow);  */
+
+/* *****************************Conic Gradient***************************** */
+.conic-box {
+    width: 300px;
+    height: 150px;
+    background: conic-gradient(violet, blue, aqua,green,yellow, orange, red, violet);
+    text-align: center;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}

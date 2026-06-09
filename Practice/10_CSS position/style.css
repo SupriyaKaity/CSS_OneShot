@@ -1,0 +1,131 @@
+/* *********************************CSS position: static
+    ********************************* */
+.box {
+  position: static; /* default position */
+  width: 200px;
+  height: 80px;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 10px;
+}
+
+.box1 {
+  background-color: lightblue;
+}
+
+.box2 {
+  background-color: lightgreen;
+  top: 10px;   /* will NOT work */
+  left: 100px; /* will NOT work */
+}
+
+.box3 {
+  background-color: lightcoral;
+}
+
+/* *********************************CSS position: relative
+    ********************************* */
+.card {
+    position: relative;      /* Moves relative to its normal position */
+    top: 20px;              /* Moves 20px down */
+     left: 30px;            /* Moves 30px right */
+
+    width: 150px;
+    height: 80px;
+
+    border: 2px solid black;
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+/* *********************************CSS position: absolute
+    ********************************* */
+.container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border: 2px solid black;
+    margin: 50px;
+}
+
+.box {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 120px;
+    height: 60px;
+    background-color: coral;
+    padding: 10px;
+    color: white;
+}
+
+/* *********************************CSS position: fixed
+    ********************************* */
+body {
+  margin: 0;
+  /* padding-top: 60px; */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+h1 {
+  position: fixed;
+  top: 0;
+  width: 500px;
+  background: white;
+  padding: 10px;
+  border-bottom: 2px solid #ccc;
+  margin-top: -10px;
+}
+
+p {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* *********************************CSS position: sticky
+    ********************************* */
+h3 {
+  position: sticky;
+  top: 90px;
+  left: 30px;
+}
+
+/* *********************************Z-Index Property
+    ********************************* */
+.cont {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.box4 {
+  position: absolute;
+  z-index: 1;
+  background: lightcoral;
+  top: 20px;
+  left: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+.box5 {
+  position: absolute;
+  z-index: 3;
+  background: gold;
+  top: 40px;
+  left: 40px;
+  width: 100px;
+  height: 100px;
+}
+
+.box6 {
+  position: absolute;
+  z-index: 2;
+  background: lightgreen;
+  top: 60px;
+  left: 60px;
+  width: 100px;
+  height: 100px;
+}
